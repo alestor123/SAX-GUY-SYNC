@@ -1,4 +1,5 @@
 var player = document.getElementById("player");
+
 function startIt() {
 player.requestFullscreen()
 var inputTime = document.getElementById("appt").value,
@@ -19,7 +20,7 @@ console.log(Check(now,ded,interval))
 }
 function Check(now,date,interval){
 if(now>=date) {
-player.src += '?autoplay=1'
+player.src += '?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0'
 clearInterval(interval);
 return 'Awesome'
 }
