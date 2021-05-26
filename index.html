@@ -13,12 +13,15 @@
 <h2>Play Gandalf Sax Guy At The Same Time</h1>
 </div>
 <div class="time">
-    <label for="appt">Choose a time for your meeting:</label>
-
-    <input type="time" id="appt" name="appt"
-           min="09:00" max="18:00" required>
-    
-<small>Office hours are 9am to 6pm</small>    
+<div class="select">
+<label for="appt" id="lbl">Choose a time for the music :</label>
+<input type="time" id="appt" name="appt" onchange="startIt()" required>    
+</div>
+<div class="main">
+<iframe src="https://www.youtube.com/embed/G1IbRujko-A"  id="player" allow="autoplay" frameborder="0" allowfullscreen id="video"  width="500" height="300"></iframe>
+</div>
+<!-- <button class="button" onclick="startIt()">Start</button> -->
 </div>
 </body>
+<script src="public/scripts/App.js"></script>
 </html>
