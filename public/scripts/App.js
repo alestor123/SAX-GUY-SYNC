@@ -24,5 +24,5 @@ player.src += '?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0'
 clearInterval(interval);
 return 'Awesome'
 }
-else return 'New Year Is On Its Way'
+else return 'On Its Way'
 }
